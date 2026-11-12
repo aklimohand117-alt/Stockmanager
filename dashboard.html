@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockManager - Tableau de bord</title>
+</head>
+<body>
+    <nav>
+        <h2>StockManager</h2>
+        <ul>
+            <li><a href="dashboard.html">Tableau de bord</a></li>
+            <li><a href="produits.html">Produits</a></li>
+            <li><a href="entrees.html">Entrées de stock</a></li>
+            <li><a href="sorties.html">Sorties de stock</a></li>
+            <li><a href="utilisateurs.html">Utilisateurs</a></li>
+            <li><a href="index.html">Se déconnecter</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <header>
+            <h1>Tableau de bord</h1>
+            <p>Gardez une vue claire sur votre stock et vos opérations.</p>
+            <a href="mouvements.html">+ Nouveau mouvement</a>
+        </header>
+
+        <section class="stats">
+            <article>
+                <h3>Nombre total de produits</h3>
+                <p class="chiffre">1 248</p>
+                <small>Références au catalogue</small>
+            </article>
+            <article>
+                <h3>Stock disponible</h3>
+                <p class="chiffre">24 580</p>
+                <small>Unités en stock</small>
+            </article>
+            <article>
+                <h3>Stock faible</h3>
+                <p class="chiffre">18</p>
+                <small>Produits à réapprovisionner</small>
+            </article>
+        </section>
+
+        <aside class="alerte">
+            <strong>18 produits nécessitent votre attention</strong>
+            <p>Leur quantité disponible est inférieure au seuil minimum.</p>
+            <a href="produits.html">Voir les produits →</a>
+        </aside>
+
+        <section>
+            <h2>Derniers mouvements de stock</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produit</th>
+                        <th>Type</th>
+                        <th>Quantité</th>
+                        <th>Date et heure</th>
+                        <th>Utilisateur</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Papier A4 - 80 g</td>
+                        <td>Entrée</td>
+                        <td>+240</td>
+                        <td>06 nov. 2026 - 10:42</td>
+                        <td>Sophie Martin</td>
+                    </tr>
+                    <tr>
+                        <td>Cartouche d'encre noire</td>
+                        <td>Sortie</td>
+                        <td>-12</td>
+                        <td>06 nov. 2026 - 10:15</td>
+                        <td>Thomas Bernard</td>
+                    </tr>
+                    <tr>
+                        <td>Classeur à levier bleu</td>
+                        <td>Entrée</td>
+                        <td>+60</td>
+                        <td>06 nov. 2026 - 09:58</td>
+                        <td>Sophie Martin</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
