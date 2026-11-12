@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock de magasin simule</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Gestion de Stock</h1>
+    <p>Bienvenue su votre tableau de bord </p>
+    <nav>
+        <ul>
+            <li> <a href="#">Acceuil</a></li>
+            <li> <a href="#">Produits</a></li> 
+            <li> <a href="#">Entrees de stock</a></li>
+        
+            <li> <a href="#"> Sorties  de stock</a></li>
+        
+        
+            <li> <a href="#"> Alertes</a></li>
+        </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="dashboard">
+        <h2>Tableau de bord</h2>
+        <p>Voici un aperçu de votre gestion de stock.</p>
+
+        <div class="statistiques">
+            <div class="card">
+                <h3>Nombre de produits</h3>
+                <p>125</p>
+            </div>
+
+            <div class="card">
+                <h3>Entrées de stock</h3>
+                <p>45</p>
+            </div>
+
+            <div class="card">
+                <h3>Sorties de stock</h3>
+                <p>30</p>
+            </div>
+
+            <div class="card">
+                <h3>Alertes de stock</h3>
+                <p>5</p>
+            </div>
+        </div>
+    </section>
+    <section class="mouvements">
+    <h2>Derniers mouvements de stock</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Produit</th>
+                <th>Type</th>
+                <th>Quantité</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Clavier</td>
+                <td>Entrée</td>
+                <td>20</td>
+                <td>06/11/2026</td>
+            </tr>
+
+            <tr>
+                <td>Souris</td>
+                <td>Sortie</td>
+                <td>5</td>
+                <td>06/11/2026</td>
+            </tr>
+
+            <tr>
+                <td>Écran</td>
+                <td>Entrée</td>
+                <td>10</td>
+                <td>05/11/2026</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+</main>
+    
+ <script src="script.js"></script>
+</body>
+</html>
