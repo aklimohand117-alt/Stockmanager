@@ -5,10 +5,10 @@ const emailMessage = document.getElementById("email-message");
 const passwordInput = document.getElementById("password");
 const passwordMessage = document.getElementById("password-message");
 const strengthFill = document.getElementById("strength-fill");
+const toggleButton = document.getElementById("toggle-password");
 
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-
 
 function afficher(input, message, texte, type) {
     message.textContent = texte;
@@ -68,8 +68,18 @@ passwordInput.addEventListener("input", function () {
 });
 
 
+toggleButton.addEventListener("click", function () {
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        toggleButton.textContent = "Masquer";
+    } else {
+        passwordInput.type = "password";
+        toggleButton.textContent = "Afficher";
+    }
+});
+
 form.addEventListener("submit", function (event) {
-    event.preventDefault(); // on empêche l'envoi automatique
+    event.preventDefault(); 
 
     if (!emailRegex.test(emailInput.value.trim())) {
         afficher(emailInput, emailMessage, "Entrez une adresse e-mail valide", "error");
@@ -80,7 +90,6 @@ form.addEventListener("submit", function (event) {
         afficher(passwordInput, passwordMessage, "Entrez votre mot de passe", "error");
         return;
     }
-
 
     window.location.href = "dashboard.html";
 });

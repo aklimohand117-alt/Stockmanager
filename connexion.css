@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -238,6 +237,9 @@ button:hover {
         font-size: 32px;
     }
 }
+
+/* VALIDATION */
+
 .form-group input.valid {
     border-color: #16a34a;
 }
@@ -261,6 +263,7 @@ button:hover {
 }
 
 /* BARRE DE FORCE DU MOT DE PASSE */
+
 .strength-bar {
     height: 8px;
     background: #e2e8f0;
@@ -288,4 +291,53 @@ button:hover {
 #strength-fill.fort {
     width: 100%;
     background: #16a34a;
+}
+
+/* PAGE MOT DE PASSE OUBLIE */
+
+.confirmation {
+    display: none;
+    margin-top: 25px;
+    padding: 18px 20px;
+    background: #ecfdf3;
+    border: 1px solid #16a34a;
+    border-radius: 10px;
+    color: #166534;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.confirmation.visible {
+    display: block;
+}
+
+/* AFFICHER / MASQUER LE MOT DE PASSE */
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    padding-right: 100px;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: auto;
+    height: auto;
+    padding: 8px 12px;
+    background: none;
+    border: none;
+    color: #1555a5;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.toggle-password:hover {
+    background: none;
+    color: #082e66;
 }
