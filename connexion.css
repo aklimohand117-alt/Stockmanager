@@ -238,3 +238,54 @@ button:hover {
         font-size: 32px;
     }
 }
+.form-group input.valid {
+    border-color: #16a34a;
+}
+
+.form-group input.invalid {
+    border-color: #dc2626;
+}
+
+.message {
+    font-size: 14px;
+    margin-top: 8px;
+    min-height: 18px;
+}
+
+.message.error {
+    color: #dc2626;
+}
+
+.message.success {
+    color: #16a34a;
+}
+
+/* BARRE DE FORCE DU MOT DE PASSE */
+.strength-bar {
+    height: 8px;
+    background: #e2e8f0;
+    border-radius: 4px;
+    margin-top: 12px;
+    overflow: hidden;
+}
+
+#strength-fill {
+    height: 100%;
+    width: 0;
+    transition: width 0.3s, background 0.3s;
+}
+
+#strength-fill.faible {
+    width: 33%;
+    background: #dc2626;
+}
+
+#strength-fill.moyen {
+    width: 66%;
+    background: #f59e0b;
+}
+
+#strength-fill.fort {
+    width: 100%;
+    background: #16a34a;
+}
