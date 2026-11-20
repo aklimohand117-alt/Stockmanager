@@ -1,0 +1,240 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #ffffff;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* PARTIE GAUCHE */
+
+.left-panel {
+    width: 50%;
+    background: linear-gradient(145deg, #062957, #001a3b);
+    color: #ffffff;
+    padding: 55px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo p {
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    color: #c5d8ef;
+}
+
+.presentation h1 {
+    font-size: 56px;
+    line-height: 1.2;
+    margin-bottom: 35px;
+    font-weight: bold;
+}
+
+.presentation h1 span {
+    color: #91caff;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 50px;
+    color: #f1f5f9;
+}
+
+.advantage {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 20px 10px;
+    border-bottom: 1px solid #31547a;
+    font-size: 16px;
+}
+
+.advantage span {
+    color: #9acbff;
+    font-size: 14px;
+}
+
+.advantage strong {
+    font-weight: 600;
+}
+
+.left-footer {
+    font-size: 15px;
+    color: #d4e3f5;
+}
+
+/* PARTIE DROITE */
+
+.right-panel {
+    width: 50%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.login {
+    width: 100%;
+    max-width: 520px;
+}
+
+.label-top {
+    color: #1555a5;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.login h2 {
+    font-size: 42px;
+    color: #102b52;
+    margin-bottom: 20px;
+}
+
+.intro {
+    font-size: 18px;
+    color: #53657e;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* FORMULAIRE */
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    display: block;
+    color: #102b52;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.form-group input {
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    border: 1px solid #d3dbe6;
+    border-radius: 10px;
+    background: #f8fafc;
+    font-size: 16px;
+    color: #102b52;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #174b8d;
+}
+
+.form-group input::placeholder {
+    color: #7a8799;
+}
+
+/* MOT DE PASSE OUBLIE */
+
+.forgot {
+    text-align: right;
+    margin-top: -10px;
+    margin-bottom: 40px;
+}
+
+.forgot a {
+    color: #1555a5;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* BOUTON */
+
+button {
+    width: 100%;
+    height: 66px;
+    background: #082e66;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #164783;
+}
+
+/* INFORMATIONS */
+
+.access {
+    text-align: center;
+    color: #66758b;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.help {
+    text-align: center;
+    margin-top: 70px;
+    line-height: 1.8;
+    color: #53657e;
+    font-size: 15px;
+}
+
+.help a {
+    color: #1555a5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-panel,
+    .right-panel {
+        width: 100%;
+    }
+
+    .left-panel {
+        min-height: 650px;
+        padding: 35px;
+    }
+
+    .presentation h1 {
+        font-size: 40px;
+    }
+
+    .right-panel {
+        padding: 40px 25px;
+    }
+
+    .login h2 {
+        font-size: 32px;
+    }
+}

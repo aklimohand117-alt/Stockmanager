@@ -1,95 +1,73 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StockManager</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f6f9;
-        }
-
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #34495e;
-            padding: 15px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-right: 20px;
-        }
-
-        main {
-            padding: 30px;
-        }
-
-        .cartes {
-            display: flex;
-            gap: 20px;
-        }
-
-        .carte {
-            background-color: white;
-            padding: 25px;
-            border-radius: 10px;
-            flex: 1;
-            box-shadow: 0 2px 5px #ccc;
-        }
-
-        .carte h3 {
-            color: #2c3e50;
-        }
-    </style>
+    <title>StockManager - Accueil</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>StockManager</h1>
-        <p>Application de gestion de stock</p>
-    </header>
+<header class="header">
+    <h2>Stock<span>Manager</span></h2>
+    <div class="header-right">Gestion de stock</div>
+</header>
 
-    <nav>
-        <a href="#">Accueil</a>
-        <a href="#">Produits</a>
-        <a href="#">Catégories</a>
-        <a href="#">Stock</a>
-    </nav>
+<nav class="navbar">
+    <a href="index.php" class="active">Accueil</a>
+    <a href="produits.html">Produits</a>
+    <a href="connexion.html">Connexion</a>
+</nav>
 
-    <main>
-        <h2>Tableau de bord</h2>
+<main class="container">
 
-        <div class="cartes">
+    <section class="welcome">
+        <h1>Tableau de bord</h1>
+        <p>Bienvenue dans votre espace de gestion de stock.</p>
+    </section>
 
-            <div class="carte">
-                <h3>Nombre de produits</h3>
-                <p>0 produit</p>
-            </div>
+    <section class="stats">
 
-            <div class="carte">
-                <h3>Stock disponible</h3>
-                <p>0 article</p>
-            </div>
-
-            <div class="carte">
-                <h3>Stock faible</h3>
-                <p>0 produit</p>
-            </div>
-
+        <div class="stat-card blue">
+            <h3>Nombre de produits</h3>
+            <p>120</p>
         </div>
-    </main>
+
+        <div class="stat-card green">
+            <h3>Catégories</h3>
+            <p>8</p>
+        </div>
+
+        <div class="stat-card orange">
+            <h3>Stock faible</h3>
+            <p>5</p>
+        </div>
+
+        <div class="stat-card purple">
+            <h3>Fournisseurs</h3>
+            <p>12</p>
+        </div>
+
+    </section>
+
+    <section class="quick-actions">
+
+        <h2>Actions rapides</h2>
+
+        <div class="buttons">
+            <a href="produits.html" class="btn">
+                Gestion des produits
+            </a>
+
+            <a href="connexion.html" class="btn">
+                Se connecter
+            </a>
+        </div>
+
+    </section>
+
+</main>
 
 </body>
 </html>
