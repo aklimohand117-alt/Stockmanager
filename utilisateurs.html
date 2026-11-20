@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des utilisateurs</title>
+    <link rel="stylesheet" href="utilisateurs.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Gestion des utilisateurs</h1>
+        <p>Ajouter et gérer les utilisateurs de StockManager.</p>
+
+        <div class="formulaire">
+            <h2>Ajouter un utilisateur</h2>
+
+            <form>
+                <label>Nom</label>
+                <input type="text" placeholder="Entrez le nom">
+
+                <label>Prénom</label>
+                <input type="text" placeholder="Entrez le prénom">
+
+                <label>Email</label>
+                <input type="email" placeholder="Entrez l'adresse email">
+
+                <label>Mot de passe</label>
+                <input type="password" placeholder="Entrez le mot de passe">
+
+                <label>Rôle</label>
+                <select>
+                    <option value="">Choisir un rôle</option>
+                    <option>Administrateur</option>
+                    <option>Gestionnaire</option>
+                    <option>Employé</option>
+                </select>
+
+                <button type="submit">Ajouter l'utilisateur</button>
+            </form>
+        </div>
+
+        <div class="tableau">
+            <h2>Liste des utilisateurs</h2>
+
+            <table>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Email</th>
+                    <th>Rôle</th>
+                    <th>Action</th>
+                </tr>
+
+                <tr>
+                    <td>Dupont</td>
+                    <td>Marie</td>
+                    <td>marie@gmail.com</td>
+                    <td>Administrateur</td>
+                    <td><button class="supprimer">Supprimer</button></td>
+                </tr>
+
+                <tr>
+                    <td>Martin</td>
+                    <td>Paul</td>
+                    <td>paul@gmail.com</td>
+                    <td>Employé</td>
+                    <td><button class="supprimer">Supprimer</button></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
