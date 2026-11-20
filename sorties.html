@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorties des produits</title>
+    <link rel="stylesheet" href="sorties.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sorties des produits</h1>
+        <p>Enregistrer les produits retirés du stock.</p>
+
+        <div class="formulaire">
+            <h2>Nouvelle sortie</h2>
+
+            <form>
+                <label>Nom du produit</label>
+                <input type="text" placeholder="Ex : Ordinateur">
+
+                <label>Quantité sortie</label>
+                <input type="number" min="1" placeholder="Entrez la quantité">
+
+                <label>Motif de sortie</label>
+                <select>
+                    <option value="">Choisir un motif</option>
+                    <option>Vente</option>
+                    <option>Utilisation</option>
+                    <option>Perte</option>
+                    <option>Produit endommagé</option>
+                    <option>Autre</option>
+                </select>
+
+                <label>Date de sortie</label>
+                <input type="date">
+
+                <label>Responsable</label>
+                <input type="text" placeholder="Nom du responsable">
+
+                <label>Observation</label>
+                <textarea placeholder="Ajouter une remarque"></textarea>
+
+                <button type="submit">Enregistrer la sortie</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

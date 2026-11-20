@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockManager - Mot de passe oublié</title>
+    <link rel="stylesheet" href="connexion.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="left-panel">
+
+            <header class="logo">
+                <h2>StockManager</h2>
+                <p>LA GESTION DE STOCK, SIMPLEMENT.</p>
+            </header>
+
+            <div class="presentation">
+                <h1>
+                    Un oubli ?<br>
+                    <span>Pas de panique.</span>
+                </h1>
+
+                <p class="description">
+                    Saisissez votre adresse e-mail et nous vous aiderons
+                    à retrouver l'accès à votre espace.
+                </p>
+            </div>
+
+            <footer class="left-footer">
+                Moins de complexité. Plus de maîtrise.
+            </footer>
+
+        </section>
+
+        <section class="right-panel">
+
+            <div class="login">
+
+                <p class="label-top">RÉINITIALISATION</p>
+
+                <h2>Mot de passe oublié</h2>
+
+                <p class="intro">
+                    Entrez l'adresse e-mail liée à votre compte pour recevoir
+                    un lien de réinitialisation.
+                </p>
+
+                <form id="oubli-form" novalidate>
+
+                    <div class="form-group">
+                        <label for="email">Adresse e-mail</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="exemple@entreprise.com"
+                            required
+                        >
+                        <p class="message" id="email-message"></p>
+                    </div>
+
+                    <button type="submit">Envoyer le lien</button>
+
+                </form>
+
+                <p class="confirmation" id="confirmation"></p>
+
+                <div class="help">
+                    <a href="connexion.html">← Retour à la connexion</a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="oubli.js"></script>
+
+</body>
+</html>
