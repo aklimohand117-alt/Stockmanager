@@ -29,23 +29,23 @@
         <section class="stats">
             <article>
                 <h3>Nombre total de produits</h3>
-                <p class="chiffre">1 248</p>
+                <p class="chiffre" id="total-produits">1 248</p>
                 <small>Références au catalogue</small>
             </article>
             <article>
                 <h3>Stock disponible</h3>
-                <p class="chiffre">24 580</p>
+                <p class="chiffre" id="total-stock">24 580</p>
                 <small>Unités en stock</small>
             </article>
             <article>
                 <h3>Stock faible</h3>
-                <p class="chiffre">18</p>
+                <p class="chiffre" id="total-faible">18</p>
                 <small>Produits à réapprovisionner</small>
             </article>
         </section>
 
         <aside class="alerte">
-            <strong>18 produits nécessitent votre attention</strong>
+            <strong id="message-alerte">18 produits nécessitent votre attention</strong>
             <p>Leur quantité disponible est inférieure au seuil minimum.</p>
             <a href="produits.html">Voir les produits →</a>
         </aside>
@@ -89,5 +89,6 @@
         </section>
     </main>
     <script src="stock.js"></script>
+    <script src="dashboard.js"></script>
 </body>
 </html>
